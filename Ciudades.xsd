@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Ciudades">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Ciudad"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ciudad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Country"/>
+        <xs:element ref="City"/>
+        <xs:element ref="AccentCity"/>
+        <xs:element ref="Region"/>
+        <xs:element ref="Population"/>
+        <xs:element ref="Latitude"/>
+        <xs:element ref="Longitude"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Country" type="xs:NCName"/>
+  <xs:element name="City" type="ciudades" nillable="false"/>
+  <xs:element name="AccentCity" type="ciudades" nillable="false"/>
+  <xs:element name="Region" type="xs:string"/>
+  <xs:element name="Population" type="poblacion"/>
+  <xs:element name="Latitude" type="xs:float"/>
+  <xs:element name="Longitude" type="xs:float"/>
+  <xs:simpleType name="ciudades">
+      <xs:restriction base="xs:string">
+        <xs:minLength value="1"/>
+      </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="poblacion">
+    <xs:union>
+      <xs:simpleType>
+        <xs:restriction base='xs:string'>
+          <xs:length value="0"/>
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:simpleType>
+        <xs:restriction base='xs:integer' />
+      </xs:simpleType>
+    </xs:union>    
+  </xs:simpleType>
+</xs:schema>

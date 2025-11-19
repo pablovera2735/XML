@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Ciudades>
+    <Ciudad>
+        <Country>ad</Country>
+        <City>aixas</City>
+        <AccentCity>Aixàs</AccentCity>
+        <Region>06</Region>
+        <Population>0</Population>
+        <Latitude>qqqqq</Latitude>
+        <Longitude>1.4666667</Longitude>
+    </Ciudad>
+    <Ciudad>
+        <Country>ad</Country>
+        <City>aixirivali</City>
+        <AccentCity>Aixirivali</AccentCity>
+        <Region>06</Region>
+        <Population>76000</Population>
+        <Latitude>42.466667</Latitude>
+        <Longitude>1.5</Longitude>
+    </Ciudad>
+    <Ciudad>
+        <Country>ad</Country>
+        <City>aixirivall</City>
+        <AccentCity>Aixirivall</AccentCity>
+        <Region>06</Region>
+        <Population>0</Population>
+        <Latitude>42.466667</Latitude>
+        <Longitude>1.5</Longitude>
+    </Ciudad>
+</Ciudades>	
